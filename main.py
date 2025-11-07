@@ -30,7 +30,10 @@ while True:
             print("Error")
     if response == "Deposit":
         deposit = input("How much would you like to deposit?")
-        balance = balance + deposit
+        if deposit > 0:
+            balance = balance + deposit
+        if deposit < 0:
+            print("Error")
     qwerty = input("Exit?")
     if qwerty == "Yes":
         break
