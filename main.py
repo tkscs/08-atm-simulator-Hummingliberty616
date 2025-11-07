@@ -28,10 +28,12 @@ while True:
             print("Error")
         if withdrawal > balance: 
             print("Error")
-       
     if response == "Deposit":
         deposit = input("How much would you like to deposit?")
         balance = balance + deposit
+    qwerty = input("Exit?")
+    if qwerty == "Yes":
+        break
 
 
     
